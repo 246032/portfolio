@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "バック",
+    "price": 100,
+    "avail": 4,
+    "image": "images/backimg.png"
+  },
+  {
+    "id": 2,
+    "name": "ポーチ",
+    "price": 100,
+    "avail": 4,
+    "image": "images/pouchimg.png"
+  },
+  {
+    "id": 3,
+    "name": "ポケットティッシュカバー",
+    "price": 100,
+    "avail": 4,
+    "image": "images/pocketimg.png"
+  },
+  {
+    "id": 4,
+    "name": "巾着",
+    "price": 100,
+    "avail": 4,
+    "image": "images/巾着img.png"
+  },
+  {
+    "id": 5,
+    "name": "コースター",
+    "price": 100,
+    "avail": 4,
+    "image": "images/coasterimg.png"
+  },
+  {
+    "id": 6,
+    "name": "たわし",
+    "price": 100,
+    "avail": 4,
+    "image": "images/tawashi.png"
+  }
+]

@@ -1,0 +1,591 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: #fffef0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-size: cover;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  background-color: #fff;
+  border: 5px solid #6bb529;
+  font-size: 1.5rem;
+  color: #6bb529;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 35px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #6bb529;
+  border-color: #eaffd8;
+  transition: 0.5s;
+}
+
+ul {
+  padding: auto;
+  margin: auto;
+  display: flex;
+
+  li {
+    list-style: none;
+    margin-left: 20px;
+  }
+}
+
+hr {
+  border: 3px solid #ff8000;
+}
+/*レイアウトここまで*/
+/*トップページここから*/
+
+/*ヘッダーここから*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+
+  div {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: column;
+      width: 100%;
+      background-color: #ff8000;
+      li {
+        width: 33%;
+        height: 30px;
+        margin: auto;
+        a {
+          display: block;
+          border: 3px outset #000;
+        }
+      }
+    }
+  }
+
+  .head {
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.images {
+  padding: 200px;
+  background-image: url(../images/DSC_0263.JPG);
+  background-size: 100%;
+  background-position: center;
+  min-width: 720px;
+}
+
+/*ヘッダーここまで*/
+
+/*利用者コーナーここから*/
+#User {
+  background-color: #fff;
+  border: 5px solid #6bb529;
+  border-radius: 10px;
+  max-width: 960px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+  margin: 10px auto;
+  gap: 20px;
+
+  li {
+    background-color: #6bb529;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/*利用者コーナーここまで*/
+
+/*もいわぽっけって？ ここから*/
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eaffd8;
+  padding: 30px;
+  border-top: 5px solid #6bb529;
+  border-bottom: 5px solid #6bb529;
+  margin: 10px 0;
+
+  div {
+    min-width: 230px;
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  img {
+    max-height: 367px;
+    margin: 20px;
+  }
+}
+
+/*もいわぽっけって？ ここまで*/
+
+/*フッターここから*/
+footer {
+  background-color: #ff8000;
+  border-radius: 10px;
+  padding: 1px;
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    gap: 20px;
+    background-color: #fffef0;
+
+    img {
+      margin: 10px;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    align-items: center;
+
+    #big {
+      background-color: #ff8000;
+      grid-column: 3/3;
+      grid-row: 1/4;
+    }
+  }
+
+  li {
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
+/*フッターここまで*/
+
+/*トップページここまで*/
+/*サブページここから*/
+
+main {
+  border: 5px solid #6bb529;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  background-color: #fff;
+  border: 5px solid #000;
+  padding: 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/*userここから*/
+.user {
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    div {
+      margin: 0 10px;
+      border: 5px solid #6bb529;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      padding: 30px;
+
+      h3 {
+        color: #6bb529;
+      }
+
+      .rem {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      max-width: 665px;
+      li {
+        list-style-image: url(../images/Frame\ 48.png);
+        list-style-position: outside;
+      }
+    }
+  }
+}
+
+/*userここまで*/
+
+/*aboutここから*/
+.grid {
+  border: 3px solid #6bb529;
+  background-color: #d6ffb3;
+  border-radius: 25px;
+  padding: 0 15px;
+  margin: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px 1fr;
+  justify-content: flex-start;
+
+  .line {
+    border-left: 3px dashed #6bb529;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+.reverse {
+  border: 3px solid #000;
+  border-radius: 25px;
+  padding: 0 15px;
+  margin: 10px;
+}
+
+table {
+  margin: auto;
+}
+
+/*aboutここまで*/
+/*SHOPページここから*/
+.background {
+  display: none;
+}
+.background.block {
+  display: inline;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+#shop {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+
+    section {
+      background-color: #d6ffb3;
+      width: auto;
+      border-radius: 25px;
+      padding: 10px;
+
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 25px;
+      }
+
+      div {
+        background-color: #fff;
+        border: 5px solid#6bb529;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+
+        .plus,
+        .minus {
+          background-color: #f7ff89;
+          border-radius: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.cart {
+  position: fixed;
+  bottom: 10px;
+  left: 5%;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 5px solid #6bb529;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  z-index: 1100;
+
+  /* 通常時: 合計数量ラベル */
+  .sumsuu {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  /* 通常時: 個数 */
+  .suu {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  /* 通常時: 合計金額ラベル */
+  .total {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  /* 通常時: 合計金額 */
+  .sum {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  button {
+    border: 5px solid #6bb529;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    font-weight: bold;
+  }
+
+  /* confirm時: 確認テーブル */
+  table {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.cart.confirm {
+  button {
+    grid-row: 1/3;
+  }
+}
+
+/*SHOPページここまで*/
+/*スタッフページここから*/
+
+.staff {
+  display: grid;
+
+  img {
+    width: 1rem;
+  }
+
+  .bold {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2px;
+  }
+
+  hr {
+    border: 1px solid #6bb529;
+    margin: 5px;
+  }
+  hd {
+  }
+
+  button {
+    padding: 10px;
+    background-color: #3297d1;
+    border-radius: 5px;
+    margin: 10px;
+
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  .color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      background-color: #eaffd8;
+      border-radius: 5px;
+      padding: 2px;
+    }
+  }
+
+  .disc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: disc;
+  }
+}
+
+/*スタッフページここまで*/
+/* login.html ログインメッセージ */
+.login-msg {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 500px;
+}
+.login-ok {
+  background-color: #eaffd8;
+  color: #3a7d00;
+  border: 2px solid #6bb529;
+}
+.login-err {
+  background-color: #fff0f0;
+  color: #c0392b;
+  border: 2px solid #e74c3c;
+}
+/*お問い合わせページここから*/
+
+.form {
+  th {
+    background-color: #eaffd8;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    span {
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: #fc6356;
+      border-radius: 50px;
+    }
+    #radio {
+      background-color: darkgray;
+    }
+  }
+
+  input[type="text"],
+  textarea,
+  .width,
+  td {
+    width: 80%;
+  }
+  input,
+  textarea,
+  select {
+    border: 1px solid #2e4e12;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #3297d1;
+    border-radius: 5px;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/*お問い合わせページここまで*/
+/* buy.html 注文確認ページ */
+.back-link {
+  text-align: left;
+  margin: 10px 0 20px;
+}
+.back-link a {
+  color: #6bb529;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.order-table {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.order-table th,
+.order-table td {
+  border: 2px solid #6bb529;
+  padding: 10px 14px;
+  text-align: center;
+}
+.order-table thead tr {
+  background-color: #6bb529;
+  color: #fff;
+  font-weight: bold;
+}
+.order-table tbody tr:nth-child(even) {
+  background-color: #eaffd8;
+}
+.order-table tfoot .total-row {
+  background-color: #fffef0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.empty-msg {
+  font-size: 1.2rem;
+  margin: 40px auto;
+}
+.empty-msg a {
+  color: #6bb529;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*サブページここまで*/
+/*高優先命令まとめ*/
+.hidden {
+  display: none;
+}
+
+/*モバイルページここから　横幅620px*/
+@media (max-width: 620px) {
+}
